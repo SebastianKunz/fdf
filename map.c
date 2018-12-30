@@ -111,8 +111,8 @@ t_point	*ft_convert(int **new, t_info info, t_mod mod)
 		x = -1;
 		while (++x < info.linedigcount)
 		{
-			point[++i].color = ft_color(255, 150 - new[y][x] * 5,
-				150 - new[y][x] * 5);
+			point[++i].color = ft_color(255, 255 - new[y][x] * 10,
+				255 - new[y][x] * 10);
 			point[i].x = (x - y) * cos(mod.theta_x);
 			point[i].y = -(new[y][x] * mod.div) + (x + y) * sin(mod.theta_y);
 			point[i].x *= 500 / info.linedigcount;

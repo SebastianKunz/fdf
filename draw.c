@@ -22,7 +22,7 @@ int		ft_color(int r, int g, int b)
 	return (c);
 }
 
-void	ft_setcolorall(t_point **points, t_info info, char *colorcode)
+void ft_setcolorall(t_point **points, t_info info, char *colorcode)
 {
 	int i;
 	int color;

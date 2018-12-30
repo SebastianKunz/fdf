@@ -39,11 +39,11 @@ int		ft_printerror(int code)
 	return (-1);
 }
 
-void	ft_initwindow(t_info *info)
+void ft_initwindow(t_info *info)
 {
 	info->mlx_ptr = mlx_init();
 	info->win_ptr = mlx_new_window(info->mlx_ptr, SIZE_X, SIZE_Y, "FDF");
-	mlx_string_put(info->mlx_ptr, info->win_ptr, SIZE_X / 2.3, SIZE_Y / 10,
+	mlx_string_put(info->mlx_ptr, info->win_ptr, SIZE_X / 2, SIZE_Y / 10,
 		ft_color(255, 255, 255), "Welcome to FDF");
 }
 
